@@ -2,3 +2,32 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --bg-clr: fuchsia;
+    --clr: beige;
+}
+
+body {
+    background-color: var(--bg-clr);
+    color: var(--clr);
+}
+
+.wrapper {
+    border: 2px solid var(--clr);
+    width: min(700px, 80%);
+    margin: auto;
+}
+
+.search {
+    background-color: white;
+    width: fit-content;
+}
+
+input[type = text], button {
+    outline: none;
+    border: none;
+    height: 20px;
+    padding: .3em;
+    box-sizing: content-box;
+}
